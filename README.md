@@ -1,2 +1,2 @@
 # SaoGame
-This is the game of the organisation
+This is a fan game of SAO
