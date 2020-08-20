@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 5e60156afab59e442a1d241c7ce26845
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SAO Welcome Another TT
+  fontNames:
+  - SAO Welcome Another TT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a18648d093893024eacd5a8488565741, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
