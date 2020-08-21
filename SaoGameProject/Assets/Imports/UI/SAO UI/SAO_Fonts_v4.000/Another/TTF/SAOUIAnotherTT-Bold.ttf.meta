@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: eda861eed02406c4bb779c62dc294adc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SAO UI Another TT
+  fontNames:
+  - SAO UI Another TT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 73237ad84e7fa71419787c995b64510d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

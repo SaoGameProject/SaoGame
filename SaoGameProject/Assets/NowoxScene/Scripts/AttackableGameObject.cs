@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackableGameObject : MonoBehaviour
 {
-    public float health;
+    public float health;                //health of the attackable GO
 
     public void TakeDamage(float DamageAmount)
     {
