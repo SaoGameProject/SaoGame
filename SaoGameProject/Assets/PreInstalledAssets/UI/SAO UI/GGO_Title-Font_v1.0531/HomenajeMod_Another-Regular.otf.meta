@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 19fc692ce0e3da44fbba17a3b7a09071
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: HomenajeMod_Another
+  fontNames:
+  - HomenajeMod_Another
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 76591113006fc164c936c85f16a27a37, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

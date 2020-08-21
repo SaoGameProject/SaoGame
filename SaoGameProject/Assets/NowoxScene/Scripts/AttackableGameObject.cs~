@@ -1,0 +1,19 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AttackableGameObject : MonoBehaviour
+{
+    public float health;
+
+    public void TakeDamage(float DamageAmount)
+    {
+        health -= DamageAmount;
+
+        if (health <= 0)
+        {
+            Die();
+
+        }
+    }
+}
