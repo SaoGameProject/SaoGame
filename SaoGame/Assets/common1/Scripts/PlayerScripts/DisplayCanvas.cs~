@@ -1,0 +1,26 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DispayCanvas : MonoBehaviour
+{
+    public Canvas menuCanvas;
+
+    private void Awake()
+    {
+        menuCanvas = gameObject.SetActive = false;
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonDown(KeyCode.Escape))
+        {
+            DisplayMenu();
+        }
+    }
+
+    void DisplayMenu()
+    {
+        menuCanvas = gameObject.SetActive = true;
+    }
+}
