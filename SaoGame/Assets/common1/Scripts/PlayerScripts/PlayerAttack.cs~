@@ -27,14 +27,13 @@ public class PlayerAttack : MonoBehaviour
         {
             currentFireRate = 0f;
             Attack();
-            Debug.Log("An attack has been done");
         }
     }
 
     public void Attack()
     {
-        //start attack animation
-        playerAnimator.SetTrigger("isAttacking");
+        //attack animation
+        playerAnimator.SetBool("isAttacking", true);
 
         //finding an attackable GO
         RaycastHit hit;
@@ -50,5 +49,12 @@ public class PlayerAttack : MonoBehaviour
                 target.TakeDamage(damage);
             }
         }
+    }
+
+    public IEnumerable AttackAnimation()
+    {
+        playerAnimator.SetBool("isAttacking", true);
+        yield return new WaitForSeconds(1f);
+        playerAnimator.SetBool("isAttacking", false);
     }
 }
