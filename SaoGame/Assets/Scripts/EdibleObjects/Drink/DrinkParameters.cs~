@@ -1,0 +1,25 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DrinkParameters : MonoBehaviour
+{
+    public int healthToAdd;
+
+    public PlayerHealth playerHealth;
+    
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+
+    public void GiveHealth()
+    {
+        
+    }
+}
