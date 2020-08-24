@@ -44,7 +44,7 @@ public class PlayerAttack : MonoBehaviour
             Debug.Log(hit.transform.name + " with the " + hit.transform.tag + " tag" + " has been hit");
 
             //the target of the Raycast takes damage
-            NotPlayerHealth target = hit.transform.GetComponent<NotPlayerHealth>();
+            AttackableGameObject target = hit.transform.GetComponent<AttackableGameObject>();
             if(target != null)
             {
                 target.TakeDamage(damage);

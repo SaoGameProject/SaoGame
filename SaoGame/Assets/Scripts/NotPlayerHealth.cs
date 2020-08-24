@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackableGameObject : MonoBehaviour
+public class NotPlayerHealth : MonoBehaviour
 {
-    public float health;                //health of the attackable GO
+    public int health;
 
-    public void TakeDamage(float DamageAmount)
+    public void TakeDamage(int DamageAmount)
     {
         health -= DamageAmount;
 
