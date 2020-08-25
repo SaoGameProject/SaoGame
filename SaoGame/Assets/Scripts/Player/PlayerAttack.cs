@@ -41,7 +41,7 @@ public class PlayerAttack : MonoBehaviour
 
         if(Physics.Raycast(playerHead.position, playerHead.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name + " with the " + hit.transform.tag + " tag" + " has been hit");
+            Debug.Log(hit.transform.name + " with the " + hit.transform.tag + " tag" + " got hit by the attack raycast");
 
             //the target of the Raycast takes damage
             NotPlayerHealth target = hit.transform.GetComponent<NotPlayerHealth>();

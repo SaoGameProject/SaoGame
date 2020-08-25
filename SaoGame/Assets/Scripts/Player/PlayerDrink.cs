@@ -18,7 +18,11 @@ public class PlayerDrink : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Drink();
+            Debug.Log("A search for drink has been done");
+        }
     }
 
     public void Drink()
@@ -28,13 +32,14 @@ public class PlayerDrink : MonoBehaviour
 
         if (Physics.Raycast(playerHead.position, playerHead.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name + " with the " + hit.transform.tag + " tag" + " will be drunk");
+            Debug.Log(hit.transform.name + " with the " + hit.transform.tag + " tag" + " got hit by the drink raycast");
 
             //the target of the Raycast gives health
             DrinkParameters target = hit.transform.GetComponent<DrinkParameters>();
             if (target != null)
             {
                 target.GiveHealth(healthFromDrink);
+                Debug.Log("A drink gave " + healthFromDrink + " health");
             }
         }
     }

@@ -5,10 +5,13 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Image slideBar;
+    public Image healthBar;
 
-    public void SetHealth(int health)
+    private static int playerHealth;
+
+    private void Update()
     {
-        slideBar.fillAmount = health;
+        playerHealth = PlayerHealth.currentHealth;
+        healthBar.fillAmount = playerHealth;
     }
 }

@@ -8,12 +8,9 @@ public class PlayerHealth : MonoBehaviour
     [HideInInspector]
     public static int currentHealth;
 
-    public HealthBar healthBar;
-
     private void Start()
     {
         currentHealth = maxHealth;
-        healthBar.SetHealth(currentHealth);
     }
 
     public void TakeDamage(int DamageAmount)
@@ -23,10 +20,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-
         }
-
-        healthBar.SetHealth(currentHealth);
     }
 
     void Die()
