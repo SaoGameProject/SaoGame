@@ -14,5 +14,6 @@ public class DrinkParameters : MonoBehaviour
     public void GiveHealth(int drinkHealth)
     {
         drinkHealth += playerHealth;
+        Destroy(gameObject);
     }
 }

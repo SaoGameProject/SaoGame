@@ -8,9 +8,14 @@ public class PlayerHealth : MonoBehaviour
     [HideInInspector]
     public static int currentHealth;
 
+    public GameObject playerDeathVisual;
+
     private void Start()
     {
-        currentHealth = maxHealth;
+        //currentHealth = maxHealth;
+        currentHealth = 50;
+
+        playerDeathVisual.SetActive(false);
     }
 
     public void TakeDamage(int DamageAmount)
@@ -25,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        Debug.Log("Player died");
+        playerDeathVisual.SetActive(true);
     }
 }
