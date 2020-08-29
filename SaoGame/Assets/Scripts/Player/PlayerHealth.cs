@@ -12,8 +12,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        //currentHealth = maxHealth;
-        currentHealth = 50;
+        currentHealth = maxHealth;
+        //currentHealth = 50;
 
         playerDeathVisual.SetActive(false);
     }
