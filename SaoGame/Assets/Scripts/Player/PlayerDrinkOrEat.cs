@@ -33,7 +33,7 @@ public class PlayerDrinkOrEat : MonoBehaviour
             DrinkParameters target = drinkHit.transform.GetComponent<DrinkParameters>();
             if (target != null)
             {
-                target.GiveHealth(healthFromDrink);
+                target.GiveDrinkHealth(healthFromDrink);
                 Debug.Log("A drink gave " + healthFromDrink + " health");
             }
         }
@@ -48,10 +48,10 @@ public class PlayerDrinkOrEat : MonoBehaviour
             Debug.Log(eatHit.transform.name + " with the " + eatHit.transform.tag + " tag" + " got hit by the eat raycast");
 
             //the target of the Raycast gives health
-            DrinkParameters target = eatHit.transform.GetComponent<DrinkParameters>();
+            FoodParameters target = eatHit.transform.GetComponent<FoodParameters>();
             if (target != null)
             {
-                target.GiveHealth(healthFromDrink);
+                target.GiveFoodHealth(healthFromDrink);
                 Debug.Log("A food gave " + healthFromDrink + " health");
             }
         }

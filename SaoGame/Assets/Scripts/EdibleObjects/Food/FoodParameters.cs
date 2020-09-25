@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DrinkParameters : MonoBehaviour
+public class FoodParameters : MonoBehaviour
 {
     private int playerHealth;
 
@@ -11,9 +11,9 @@ public class DrinkParameters : MonoBehaviour
         playerHealth = PlayerHealth.currentHealth;
     }
 
-    public void GiveDrinkHealth(int drinkHealth)
+    public void GiveFoodHealth(int foodHealth)
     {
-        drinkHealth += playerHealth;
+        foodHealth += playerHealth;
         Destroy(gameObject);
     }
 }
