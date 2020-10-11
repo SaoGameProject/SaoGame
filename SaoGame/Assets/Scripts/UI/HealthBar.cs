@@ -6,15 +6,19 @@ using TMPro;
 public class HealthBar : MonoBehaviour
 {
     public Image healthBar;
-    public TextMeshProUGUI healthText;
-    public GameObject Parent;
+    public PlayerHealth playerHealth;
 
-    private static int playerHealth;
+
+    private void Awake()
+    {
+       
+    }
 
     private void Update()
     {
-        float percentageHP = ((PlayerHealth.currentHealth * 100) / Parent.GetComponent<PlayerHealth>().maxHealth) / 100;
-        healthBar.fillAmount = percentageHP;
-        healthText.text = PlayerHealth.currentHealth + "/" + Parent.GetComponent<PlayerHealth>().maxHealth;
+        float healthConverter = playerHealth.currentHealth / 100;
+        Debug.Log(healthConverter);
+
+        healthBar.fillAmount = healthConverter; 
     }
 }

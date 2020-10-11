@@ -6,14 +6,13 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth;
     [HideInInspector]
-    public static int currentHealth;
+    public int currentHealth;
 
     public GameObject playerDeathVisual;
 
     private void Start()
     {
         currentHealth = maxHealth;
-        //currentHealth = 50;
 
         playerDeathVisual.SetActive(false);
     }

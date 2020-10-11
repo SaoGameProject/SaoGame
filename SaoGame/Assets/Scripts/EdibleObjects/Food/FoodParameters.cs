@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class FoodParameters : MonoBehaviour
 {
-    private int playerHealth;
+    private int playerCurrentHealth;
+    public PlayerHealth playerHealth;
 
     private void Update()
     {
-        playerHealth = PlayerHealth.currentHealth;
+        playerCurrentHealth = playerHealth.currentHealth;
     }
 
     public void GiveFoodHealth(int foodHealth)
     {
-        foodHealth += playerHealth;
+        foodHealth += playerCurrentHealth;
         Destroy(gameObject);
     }
 }
